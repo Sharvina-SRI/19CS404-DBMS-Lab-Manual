@@ -166,7 +166,7 @@ ADD column DOB Date;
 
 **Question 5**
 
-![image](https://github.com/user-attachments/assets/b25b3486-9da4-40a0-a0ae-9120ca9fca84)
+![image](https://github.com/user-attachments/assets/51283f69-4b35-49b5-a755-73b65fc2014f)
 
 ```sql
 create table Products(
@@ -183,7 +183,7 @@ Stock int check(Stock>=0)
 
 **Question 6**
 
-![image](https://github.com/user-attachments/assets/6190424f-4841-4b5a-93aa-dc0705a0a0d6)
+![image](https://github.com/user-attachments/assets/6f691f89-d8de-4a5b-98e9-291534cc8dc5)
 
 ```sql
 ALTER TABLE Student_details
@@ -196,7 +196,7 @@ Add column Country TEXT;
 
 **Question 7**
 
-![image](https://github.com/user-attachments/assets/1157e976-8d8a-44e6-901d-d52b3fcd9cca)
+![image](https://github.com/user-attachments/assets/bbdf2a4b-4bf8-416c-986f-eca166026450)
 
 ```sql
 create table ProjectAssignments(
@@ -215,7 +215,7 @@ foreign key(ProjectID)references Projects(ProjectID)
 
 **Question 8**
 
-![image](https://github.com/user-attachments/assets/90833185-41df-43dd-b1eb-ae7ab31f6cfd)
+![image](https://github.com/user-attachments/assets/405f7767-e115-4c61-9424-e3ba0acd99bc)
 
 ```sql
 create table Tasks(
