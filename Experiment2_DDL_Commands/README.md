@@ -108,7 +108,7 @@ CREATE TABLE Table_Name (
 -- ![image](https://github.com/user-attachments/assets/e041cb77-8e29-42a3-99d8-52c64b55d952)
 
 ```sql
--- Paste your SQL code below for Question 1
+--insert into Employee(EmployeeID,Name,Position,Department,Salary) values (2,'John Smith','Developer','IT',75000),(3,'Anna Bell','Designer','Marketing',68000);
 ```
 
 **Output:**
@@ -119,7 +119,15 @@ CREATE TABLE Table_Name (
 -- ![image](https://github.com/user-attachments/assets/b9356e2c-0897-41e6-8802-8ae4c8b80319)
 
 ```sql
--- Paste your SQL code below for Question 2
+--create table Employees(
+EmployeeID primary key,
+FirstName NOT NULL,
+LastName NOT NULL,
+Email unique,
+Salary not null CHECK(Salary>0),
+DepartmentID int,
+foreign key(DepartmentID) references Departments(DepartmentID)
+);
 ```
 
 **Output:**
@@ -130,7 +138,9 @@ CREATE TABLE Table_Name (
 -- ![image](https://github.com/user-attachments/assets/40461262-712b-42ce-8b7b-726017b26da8)
 
 ```sql
--- Paste your SQL code below for Question 3
+-- insert into Books(ISBN,Title,Author,Publisher,YearPublished)
+SELECT ISBN, Title, Author, Publisher, YearPublished
+FROM Out_of_print_books;
 ```
 
 **Output:**
@@ -141,7 +151,10 @@ CREATE TABLE Table_Name (
 -- ![image](https://github.com/user-attachments/assets/effdd734-7925-42a4-84c9-4465e821aff9)
 
 ```sql
--- Paste your SQL code below for Question 4
+-- alter table Companies
+RENAME COLUMN name TO VARCHAR(50);
+alter table Companies
+ADD column DOB Date;
 ```
 
 **Output:**
@@ -152,7 +165,12 @@ CREATE TABLE Table_Name (
 -- ![image](https://github.com/user-attachments/assets/b25b3486-9da4-40a0-a0ae-9120ca9fca84)
 
 ```sql
--- Paste your SQL code below for Question 5
+-- create table Products(
+ProductID primary key,
+ProductName NOT NULL,
+Price real check(Price>0),
+Stock int check(Stock>=0)
+);
 ```
 
 **Output:**
@@ -163,7 +181,8 @@ CREATE TABLE Table_Name (
 -- ![image](https://github.com/user-attachments/assets/6190424f-4841-4b5a-93aa-dc0705a0a0d6)
 
 ```sql
--- Paste your SQL code below for Question 6
+--ALTER TABLE Student_details
+Add column Country TEXT;
 ```
 
 **Output:**
@@ -174,7 +193,14 @@ CREATE TABLE Table_Name (
 --![image](https://github.com/user-attachments/assets/1157e976-8d8a-44e6-901d-d52b3fcd9cca)
 
 ```sql
--- Paste your SQL code below for Question 7
+-- create table ProjectAssignments(
+AssignmentID INTEGER primary key,
+EmployeeID INTEGER,
+ProjectID INTEGER,
+AssignmentDate DATE NOT NULL,
+foreign key(EmployeeID)references Employees(EmployeeID),
+foreign key(ProjectID)references Projects(ProjectID)
+);
 ```
 
 **Output:**
@@ -185,7 +211,11 @@ CREATE TABLE Table_Name (
 -- ![image](https://github.com/user-attachments/assets/90833185-41df-43dd-b1eb-ae7ab31f6cfd)
 
 ```sql
--- Paste your SQL code below for Question 8
+-- create table Tasks(
+TaskID INTEGER,
+TaskName TEXT,
+DueDate DATE
+);
 ```
 
 **Output:**
@@ -196,22 +226,28 @@ CREATE TABLE Table_Name (
 -- ![image](https://github.com/user-attachments/assets/a72e8aa6-dc9f-4537-9577-79e16d0a8fae)
 
 ```sql
--- Paste your SQL code below for Question 9
+-- insert into Books(ISBN,Title,Author,Publisher,Year) values ('978-1234567890','Data Science Essentials','Jane Doe','TechBooks',2024);
 ```
 
 **Output:**
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/f557b942-4863-43c4-9bd9-e8d39f2edfd8)
 
 **Question 10**
 ---
--- ![Uploading image.png…]()
+-- ![image](https://github.com/user-attachments/assets/6e68dffe-111b-4a6f-bd89-354955a95bde)
 
 ```sql
--- Paste your SQL code below for Question 10
+-- create table Attendance(
+AttendanceID INTEGER primary key,
+EmployeeID INTEGER,
+AttendanceDate DATE NOT NULL,
+Status TEXT CHECK(STATUS IN('Present','Absent','Leave')),
+foreign key(EmployeeID)references Employees(EmployeeID)
+);
 ```
 
 **Output:**
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/1c807311-9fa3-4dae-8267-9d65c408c13e)
 
 ## RESULT
 Thus, the SQL queries to implement different types of constraints and DDL commands have been executed successfully.
