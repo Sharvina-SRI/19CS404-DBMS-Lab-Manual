@@ -105,123 +105,161 @@ CREATE TABLE Table_Name (
 
 **Question 1**
 --
--- Paste Question 1 here
+--![image](https://github.com/user-attachments/assets/89dcf6c3-6c68-47b5-b44a-79e047c96a56)
 
-```sql
--- Paste your SQL code below for Question 1
+```insert into Employee(EmployeeID,Name,Position,Department,Salary) values (2,'John Smith','Developer','IT',75000),(3,'Anna Bell','Designer','Marketing',68000);
 ```
 
 **Output:**
 
-![Output1](output.png)
+![image](https://github.com/user-attachments/assets/47a8cd23-b85d-48f6-923f-de4961fc1e62)
 
 **Question 2**
 ---
--- Paste Question 2 here
+-- ![image](https://github.com/user-attachments/assets/a00a3708-5697-400f-af87-4d6efea46f63)
 
-```sql
--- Paste your SQL code below for Question 2
+```
+--create table Employees(
+EmployeeID primary key,
+FirstName NOT NULL,
+LastName NOT NULL,
+Email unique,
+Salary not null CHECK(Salary>0),
+DepartmentID int,
+foreign key(DepartmentID) references Departments(DepartmentID)
+);
+
 ```
 
 **Output:**
 
-![Output2](output.png)
+![image](https://github.com/user-attachments/assets/d00e3896-2660-48fd-a797-09e99af4e5db)
 
 **Question 3**
 ---
--- Paste Question 3 here
+-- ![image](https://github.com/user-attachments/assets/8e2e7cf2-bd43-4ba2-bbe0-df045b934cf9)
 
-```sql
--- Paste your SQL code below for Question 3
+```
+-- insert into Books(ISBN,Title,Author,Publisher,YearPublished)
+SELECT ISBN, Title, Author, Publisher, YearPublished
+FROM Out_of_print_books;
 ```
 
 **Output:**
-
-![Output3](output.png)
+![image](https://github.com/user-attachments/assets/fdcfe071-bfe7-4562-bc3a-36f74db82268)
 
 **Question 4**
 ---
--- Paste Question 4 here
+-- ![image](https://github.com/user-attachments/assets/658806dd-7493-449c-a61d-a4ce04d14e0c)
 
 ```sql
--- Paste your SQL code below for Question 4
+-- alter table Companies
+RENAME COLUMN name TO VARCHAR(50);
+alter table Companies
+ADD column DOB Date;
+
 ```
 
 **Output:**
 
-![Output4](output.png)
+![image](https://github.com/user-attachments/assets/69359801-ebd3-4497-b399-883db0a23e9c)
+
 
 **Question 5**
 ---
--- Paste Question 5 here
+-- ![image](https://github.com/user-attachments/assets/78925fbf-e6d4-4cc7-8214-804e5b76963e)
 
 ```sql
--- Paste your SQL code below for Question 5
+-- create table Products(
+ProductID primary key,
+ProductName NOT NULL,
+Price real check(Price>0),
+Stock int check(Stock>=0)
+);
 ```
 
 **Output:**
-
-![Output5](output.png)
+![image](https://github.com/user-attachments/assets/c1cf0e49-bff9-452c-9451-215c609ba194)
 
 **Question 6**
 ---
--- Paste Question 6 here
+-- ![image](https://github.com/user-attachments/assets/a51ee06f-8c11-4745-ae1b-1c54242701d4)
 
 ```sql
--- Paste your SQL code below for Question 6
+-- ALTER TABLE Student_details
+Add column Country TEXT;
 ```
 
 **Output:**
 
-![Output6](output.png)
+![image](https://github.com/user-attachments/assets/20270e2c-8623-4068-9f82-cd892916460b)
 
 **Question 7**
 ---
--- Paste Question 7 here
+-- ![image](https://github.com/user-attachments/assets/70792827-a3f5-4617-ba60-3db972265a2c)
 
 ```sql
--- Paste your SQL code below for Question 7
+--create table ProjectAssignments(
+AssignmentID INTEGER primary key,
+EmployeeID INTEGER,
+ProjectID INTEGER,
+AssignmentDate DATE NOT NULL,
+foreign key(EmployeeID)references Employees(EmployeeID),
+foreign key(ProjectID)references Projects(ProjectID)
+);
 ```
 
 **Output:**
 
-![Output7](output.png)
+![image](https://github.com/user-attachments/assets/4715f8cc-820d-4968-ade9-b630f482faa2)
 
 **Question 8**
 ---
--- Paste Question 8 here
+-- ![image](https://github.com/user-attachments/assets/fc06e08a-f238-47fa-99ed-5ea19e465c9c)
 
 ```sql
--- Paste your SQL code below for Question 8
+--create table Tasks(
+TaskID INTEGER,
+TaskName TEXT,
+DueDate DATE
+);
 ```
 
 **Output:**
 
-![Output8](output.png)
+![image](https://github.com/user-attachments/assets/dbb17674-11e9-412c-9d3a-538655426b6b)
 
 **Question 9**
 ---
--- Paste Question 9 here
+-- ![image](https://github.com/user-attachments/assets/09e150c8-4053-4655-aa3e-03f752f58fa1)
 
 ```sql
--- Paste your SQL code below for Question 9
+-- insert into Books(ISBN,Title,Author,Publisher,Year) values ('978-1234567890','Data Science Essentials','Jane Doe','TechBooks',2024);
 ```
 
 **Output:**
 
-![Output9](output.png)
+![image](https://github.com/user-attachments/assets/e2c7071a-fc23-491e-af0e-e3409512a990)
 
 **Question 10**
 ---
--- Paste Question 10 here
+--![image](https://github.com/user-attachments/assets/da112e00-a9eb-4bed-b1b7-a9191b1238cd)
+
 
 ```sql
--- Paste your SQL code below for Question 10
+-- create table Attendance(
+AttendanceID INTEGER primary key,
+EmployeeID INTEGER,
+AttendanceDate DATE NOT NULL,
+Status TEXT CHECK(STATUS IN('Present','Absent','Leave')),
+foreign key(EmployeeID)references Employees(EmployeeID)
+);
 ```
 
 **Output:**
 
-![Output10](output.png)
+![image](https://github.com/user-attachments/assets/e3947bc4-a1e5-445b-971a-192f15f01f4a)
+
 
 
 ## RESULT
