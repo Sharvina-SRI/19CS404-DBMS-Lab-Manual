@@ -65,21 +65,21 @@ Professor - Attributes: Professor ID (Primary Key), Professor Name, Experience
 ## Relationships and Constraints:
 1. books (Between University and Student)
    
-Cardinality: One university can have many students (1:N)
+   Cardinality: One university can have many students (1:N)
 
-Participation: Total participation of Student (Every student belongs to a university)
+   Participation: Total participation of Student (Every student belongs to a university)
 
 3. assigned (Between Student and Courses)
    
-Cardinality: Many students can be assigned many courses (M:N)
+   Cardinality: Many students can be assigned many courses (M:N)
 
-Participation: Partial
+   Participation: Partial
 
 5. delivers (Between Professor and Courses)
    
-Cardinality: One professor can deliver many courses, but each course is delivered by one professor (1:N)
+   Cardinality: One professor can deliver many courses, but each course is delivered by one professor (1:N)
 
-Participation: Total participation of Courses
+   Participation: Total participation of Courses
 
 ## Extension (Prerequisite / Billing):
 Pre-requisite is modeled as an attribute in the Courses entity.
