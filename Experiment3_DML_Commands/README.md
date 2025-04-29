@@ -115,7 +115,7 @@ where EMPLOYEE_ID=105 AND SALARY<5000;
 
 **Output:**
 
-![image](https://github.com/user-attachments/assets/0585f822-4457-4004-90c7-cfbf06a7f258)
+![image](https://github.com/user-attachments/assets/4e3232e6-ce3a-414f-8e0c-a032a17f9229)
 
 **Question 6**
 
