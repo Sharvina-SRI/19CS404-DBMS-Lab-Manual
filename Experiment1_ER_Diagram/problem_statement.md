@@ -55,18 +55,23 @@ University / Hospital (choose one)
 
 ## Entities and Attributes:
 University - Attributes: University code (Primary Key), Name
+
 Student- Attributes: Student Name, Student ID (Primary Key)
+
 Courses - Attributes: Course Name, Course code (Primary Key), Pre-requisite
+
 Professor - Attributes: Professor ID (Primary Key), Professor Name, Experience
 
 ## Relationships and Constraints:
 1. books (Between University and Student)
 Cardinality: One university can have many students (1:N)
 Participation: Total participation of Student (Every student belongs to a university)
+
 2. assigned (Between Student and Courses)
 Cardinality: Many students can be assigned many courses (M:N)
 Participation: Partial
-3. delivers (Between Professor and Courses)
+
+4. delivers (Between Professor and Courses)
 Cardinality: One professor can deliver many courses, but each course is delivered by one professor (1:N)
 Participation: Total participation of Courses
 
