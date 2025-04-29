@@ -64,20 +64,28 @@ Professor - Attributes: Professor ID (Primary Key), Professor Name, Experience
 
 ## Relationships and Constraints:
 1. books (Between University and Student)
+   
 Cardinality: One university can have many students (1:N)
+
 Participation: Total participation of Student (Every student belongs to a university)
 
-2. assigned (Between Student and Courses)
+3. assigned (Between Student and Courses)
+   
 Cardinality: Many students can be assigned many courses (M:N)
+
 Participation: Partial
 
-4. delivers (Between Professor and Courses)
+5. delivers (Between Professor and Courses)
+   
 Cardinality: One professor can deliver many courses, but each course is delivered by one professor (1:N)
+
 Participation: Total participation of Courses
 
 ## Extension (Prerequisite / Billing):
 Pre-requisite is modeled as an attribute in the Courses entity.
+
 It stores information about a prerequisite course required to take that course.
+
 Assumption: It is a self-referencing attribute (course code of the prerequisite).
 
 ## Design Choices:
