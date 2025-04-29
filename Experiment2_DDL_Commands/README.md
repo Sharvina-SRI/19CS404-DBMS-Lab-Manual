@@ -105,10 +105,10 @@ CREATE TABLE Table_Name (
 
 **Question 1**
 
--- ![image](https://github.com/user-attachments/assets/e041cb77-8e29-42a3-99d8-52c64b55d952)
+![image](https://github.com/user-attachments/assets/e041cb77-8e29-42a3-99d8-52c64b55d952)
 
 ```sql
---insert into Employee(EmployeeID,Name,Position,Department,Salary) values (2,'John Smith','Developer','IT',75000),(3,'Anna Bell','Designer','Marketing',68000);
+insert into Employee(EmployeeID,Name,Position,Department,Salary) values (2,'John Smith','Developer','IT',75000),(3,'Anna Bell','Designer','Marketing',68000);
 ```
 
 **Output:**
@@ -117,10 +117,10 @@ CREATE TABLE Table_Name (
 
 **Question 2**
 
--- ![image](https://github.com/user-attachments/assets/b9356e2c-0897-41e6-8802-8ae4c8b80319)
+![image](https://github.com/user-attachments/assets/b9356e2c-0897-41e6-8802-8ae4c8b80319)
 
 ```sql
---create table Employees(
+create table Employees(
 EmployeeID primary key,
 FirstName NOT NULL,
 LastName NOT NULL,
@@ -137,10 +137,10 @@ foreign key(DepartmentID) references Departments(DepartmentID)
 
 **Question 3**
 
--- ![image](https://github.com/user-attachments/assets/40461262-712b-42ce-8b7b-726017b26da8)
+![image](https://github.com/user-attachments/assets/40461262-712b-42ce-8b7b-726017b26da8)
 
 ```sql
--- insert into Books(ISBN,Title,Author,Publisher,YearPublished)
+insert into Books(ISBN,Title,Author,Publisher,YearPublished)
 SELECT ISBN, Title, Author, Publisher, YearPublished
 FROM Out_of_print_books;
 ```
@@ -151,10 +151,10 @@ FROM Out_of_print_books;
 
 **Question 4**
 
--- ![image](https://github.com/user-attachments/assets/effdd734-7925-42a4-84c9-4465e821aff9)
+![image](https://github.com/user-attachments/assets/effdd734-7925-42a4-84c9-4465e821aff9)
 
 ```sql
--- alter table Companies
+alter table Companies
 RENAME COLUMN name TO VARCHAR(50);
 alter table Companies
 ADD column DOB Date;
@@ -166,10 +166,10 @@ ADD column DOB Date;
 
 **Question 5**
 
--- ![image](https://github.com/user-attachments/assets/b25b3486-9da4-40a0-a0ae-9120ca9fca84)
+![image](https://github.com/user-attachments/assets/b25b3486-9da4-40a0-a0ae-9120ca9fca84)
 
 ```sql
--- create table Products(
+create table Products(
 ProductID primary key,
 ProductName NOT NULL,
 Price real check(Price>0),
@@ -183,10 +183,10 @@ Stock int check(Stock>=0)
 
 **Question 6**
 
--- ![image](https://github.com/user-attachments/assets/6190424f-4841-4b5a-93aa-dc0705a0a0d6)
+![image](https://github.com/user-attachments/assets/6190424f-4841-4b5a-93aa-dc0705a0a0d6)
 
 ```sql
---ALTER TABLE Student_details
+ALTER TABLE Student_details
 Add column Country TEXT;
 ```
 
@@ -196,10 +196,10 @@ Add column Country TEXT;
 
 **Question 7**
 
---![image](https://github.com/user-attachments/assets/1157e976-8d8a-44e6-901d-d52b3fcd9cca)
+![image](https://github.com/user-attachments/assets/1157e976-8d8a-44e6-901d-d52b3fcd9cca)
 
 ```sql
--- create table ProjectAssignments(
+create table ProjectAssignments(
 AssignmentID INTEGER primary key,
 EmployeeID INTEGER,
 ProjectID INTEGER,
@@ -215,10 +215,10 @@ foreign key(ProjectID)references Projects(ProjectID)
 
 **Question 8**
 
--- ![image](https://github.com/user-attachments/assets/90833185-41df-43dd-b1eb-ae7ab31f6cfd)
+![image](https://github.com/user-attachments/assets/90833185-41df-43dd-b1eb-ae7ab31f6cfd)
 
 ```sql
--- create table Tasks(
+create table Tasks(
 TaskID INTEGER,
 TaskName TEXT,
 DueDate DATE
@@ -231,10 +231,10 @@ DueDate DATE
 
 **Question 9**
 
--- ![image](https://github.com/user-attachments/assets/a72e8aa6-dc9f-4537-9577-79e16d0a8fae)
+![image](https://github.com/user-attachments/assets/a72e8aa6-dc9f-4537-9577-79e16d0a8fae)
 
 ```sql
--- insert into Books(ISBN,Title,Author,Publisher,Year) values ('978-1234567890','Data Science Essentials','Jane Doe','TechBooks',2024);
+insert into Books(ISBN,Title,Author,Publisher,Year) values ('978-1234567890','Data Science Essentials','Jane Doe','TechBooks',2024);
 ```
 
 **Output:**
@@ -243,10 +243,10 @@ DueDate DATE
 
 **Question 10**
 
--- ![image](https://github.com/user-attachments/assets/6e68dffe-111b-4a6f-bd89-354955a95bde)
+![image](https://github.com/user-attachments/assets/6e68dffe-111b-4a6f-bd89-354955a95bde)
 
 ```sql
--- create table Attendance(
+create table Attendance(
 AttendanceID INTEGER primary key,
 EmployeeID INTEGER,
 AttendanceDate DATE NOT NULL,
