@@ -105,124 +105,113 @@ CREATE TABLE Table_Name (
 
 **Question 1**
 --
--- Paste Question 1 here
+-- ![image](https://github.com/user-attachments/assets/e041cb77-8e29-42a3-99d8-52c64b55d952)
 
 ```sql
 -- Paste your SQL code below for Question 1
 ```
 
 **Output:**
-
-![Output1](output.png)
+![image](https://github.com/user-attachments/assets/8add77e5-974b-48f2-89e7-3551672be64e)
 
 **Question 2**
 ---
--- Paste Question 2 here
+-- ![image](https://github.com/user-attachments/assets/b9356e2c-0897-41e6-8802-8ae4c8b80319)
 
 ```sql
 -- Paste your SQL code below for Question 2
 ```
 
 **Output:**
-
-![Output2](output.png)
+![image](https://github.com/user-attachments/assets/2927987d-ed33-4020-88de-b5c8ee93a7c1)
 
 **Question 3**
 ---
--- Paste Question 3 here
+-- ![image](https://github.com/user-attachments/assets/40461262-712b-42ce-8b7b-726017b26da8)
 
 ```sql
 -- Paste your SQL code below for Question 3
 ```
 
 **Output:**
-
-![Output3](output.png)
+![image](https://github.com/user-attachments/assets/5a0f9285-3033-4779-943e-039531516c8a)
 
 **Question 4**
 ---
--- Paste Question 4 here
+-- ![image](https://github.com/user-attachments/assets/effdd734-7925-42a4-84c9-4465e821aff9)
 
 ```sql
 -- Paste your SQL code below for Question 4
 ```
 
 **Output:**
-
-![Output4](output.png)
+![image](https://github.com/user-attachments/assets/92d5d045-c231-4403-a521-c59f5d5302b3)
 
 **Question 5**
 ---
--- Paste Question 5 here
+-- ![image](https://github.com/user-attachments/assets/b25b3486-9da4-40a0-a0ae-9120ca9fca84)
 
 ```sql
 -- Paste your SQL code below for Question 5
 ```
 
 **Output:**
-
-![Output5](output.png)
+![image](https://github.com/user-attachments/assets/298e415b-33a5-45e0-a9bc-707694579e46)
 
 **Question 6**
 ---
--- Paste Question 6 here
+-- ![image](https://github.com/user-attachments/assets/6190424f-4841-4b5a-93aa-dc0705a0a0d6)
 
 ```sql
 -- Paste your SQL code below for Question 6
 ```
 
 **Output:**
-
-![Output6](output.png)
+![image](https://github.com/user-attachments/assets/16aa727e-6bc4-4a1c-86f2-58a0c0f30d98)
 
 **Question 7**
 ---
--- Paste Question 7 here
+--![image](https://github.com/user-attachments/assets/1157e976-8d8a-44e6-901d-d52b3fcd9cca)
 
 ```sql
 -- Paste your SQL code below for Question 7
 ```
 
 **Output:**
-
-![Output7](output.png)
+![image](https://github.com/user-attachments/assets/d6f1fc5c-f061-4539-991b-9523a74fd219)
 
 **Question 8**
 ---
--- Paste Question 8 here
+-- ![image](https://github.com/user-attachments/assets/90833185-41df-43dd-b1eb-ae7ab31f6cfd)
 
 ```sql
 -- Paste your SQL code below for Question 8
 ```
 
 **Output:**
-
-![Output8](output.png)
+![image](https://github.com/user-attachments/assets/0137f4f3-3e2a-4fb6-b011-735abe10642e)
 
 **Question 9**
 ---
--- Paste Question 9 here
+-- ![image](https://github.com/user-attachments/assets/a72e8aa6-dc9f-4537-9577-79e16d0a8fae)
 
 ```sql
 -- Paste your SQL code below for Question 9
 ```
 
 **Output:**
-
-![Output9](output.png)
+![Uploading image.png…]()
 
 **Question 10**
 ---
--- Paste Question 10 here
+-- ![Uploading image.png…]()
 
 ```sql
 -- Paste your SQL code below for Question 10
 ```
 
 **Output:**
-
-![Output10](output.png)
-
+![Uploading image.png…]()
 
 ## RESULT
 Thus, the SQL queries to implement different types of constraints and DDL commands have been executed successfully.
