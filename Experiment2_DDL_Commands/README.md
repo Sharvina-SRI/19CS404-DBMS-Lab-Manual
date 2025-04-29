@@ -104,7 +104,7 @@ CREATE TABLE Table_Name (
 ```
 
 **Question 1**
---
+
 -- ![image](https://github.com/user-attachments/assets/e041cb77-8e29-42a3-99d8-52c64b55d952)
 
 ```sql
@@ -112,10 +112,11 @@ CREATE TABLE Table_Name (
 ```
 
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/8add77e5-974b-48f2-89e7-3551672be64e)
 
 **Question 2**
----
+
 -- ![image](https://github.com/user-attachments/assets/b9356e2c-0897-41e6-8802-8ae4c8b80319)
 
 ```sql
@@ -131,10 +132,11 @@ foreign key(DepartmentID) references Departments(DepartmentID)
 ```
 
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/2927987d-ed33-4020-88de-b5c8ee93a7c1)
 
 **Question 3**
----
+
 -- ![image](https://github.com/user-attachments/assets/40461262-712b-42ce-8b7b-726017b26da8)
 
 ```sql
@@ -144,10 +146,11 @@ FROM Out_of_print_books;
 ```
 
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/5a0f9285-3033-4779-943e-039531516c8a)
 
 **Question 4**
----
+
 -- ![image](https://github.com/user-attachments/assets/effdd734-7925-42a4-84c9-4465e821aff9)
 
 ```sql
@@ -158,10 +161,11 @@ ADD column DOB Date;
 ```
 
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/92d5d045-c231-4403-a521-c59f5d5302b3)
 
 **Question 5**
----
+
 -- ![image](https://github.com/user-attachments/assets/b25b3486-9da4-40a0-a0ae-9120ca9fca84)
 
 ```sql
@@ -174,10 +178,11 @@ Stock int check(Stock>=0)
 ```
 
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/298e415b-33a5-45e0-a9bc-707694579e46)
 
 **Question 6**
----
+
 -- ![image](https://github.com/user-attachments/assets/6190424f-4841-4b5a-93aa-dc0705a0a0d6)
 
 ```sql
@@ -186,10 +191,11 @@ Add column Country TEXT;
 ```
 
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/16aa727e-6bc4-4a1c-86f2-58a0c0f30d98)
 
 **Question 7**
----
+
 --![image](https://github.com/user-attachments/assets/1157e976-8d8a-44e6-901d-d52b3fcd9cca)
 
 ```sql
@@ -204,10 +210,11 @@ foreign key(ProjectID)references Projects(ProjectID)
 ```
 
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/d6f1fc5c-f061-4539-991b-9523a74fd219)
 
 **Question 8**
----
+
 -- ![image](https://github.com/user-attachments/assets/90833185-41df-43dd-b1eb-ae7ab31f6cfd)
 
 ```sql
@@ -219,10 +226,11 @@ DueDate DATE
 ```
 
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/0137f4f3-3e2a-4fb6-b011-735abe10642e)
 
 **Question 9**
----
+
 -- ![image](https://github.com/user-attachments/assets/a72e8aa6-dc9f-4537-9577-79e16d0a8fae)
 
 ```sql
@@ -230,10 +238,11 @@ DueDate DATE
 ```
 
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/f557b942-4863-43c4-9bd9-e8d39f2edfd8)
 
 **Question 10**
----
+
 -- ![image](https://github.com/user-attachments/assets/6e68dffe-111b-4a6f-bd89-354955a95bde)
 
 ```sql
@@ -247,6 +256,7 @@ foreign key(EmployeeID)references Employees(EmployeeID)
 ```
 
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/1c807311-9fa3-4dae-8267-9d65c408c13e)
 
 ## RESULT
