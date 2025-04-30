@@ -77,7 +77,7 @@ GROUP BY DoctorID
 
 **Output:**
 
-![image](https://github.com/user-attachments/assets/bbf5388c-c289-4428-9643-da405c2b397b)
+![image](https://github.com/user-attachments/assets/e52f49d6-94da-4d1b-9e86-61f38ce17447)
 
 **Question 4**
 
@@ -90,7 +90,7 @@ FROM customer
 
 **Output:**
 
-![image](https://github.com/user-attachments/assets/c389f308-f13f-49a2-bbd9-508581377f12)
+![image](https://github.com/user-attachments/assets/5b843877-cf73-4ec1-997a-f29839f304d0)
 
 **Question 5**
 
@@ -104,7 +104,7 @@ WHERE name LIKE "A%";
 
 **Output:**
 
-![image](https://github.com/user-attachments/assets/e11ec43e-d388-4237-abdc-0c57b021bbaf)
+![image](https://github.com/user-attachments/assets/f2d1cd23-5353-434c-8fe8-1cbef12c8396)
 
 **Question 6**
 
@@ -118,7 +118,7 @@ WHERE city ="California";
 
 **Output:**
 
-![image](https://github.com/user-attachments/assets/068e0169-d548-406f-bdb5-347168c897c7)
+![image](https://github.com/user-attachments/assets/78e5ba76-8cd6-4d20-b9ed-3d2f1095846c)
 
 **Question 7**
 
@@ -131,7 +131,7 @@ FROM fruits
 
 **Output:**
 
-![image](https://github.com/user-attachments/assets/e63fe198-da03-4c4d-b3e9-d39edb553b3f)
+![image](https://github.com/user-attachments/assets/442586b0-ef51-428d-a8c2-85ae4ea0ee17)
 
 **Question 8**
 
@@ -146,7 +146,7 @@ HAVING AVG(workhour)<10;
 
 **Output:**
 
-![image](https://github.com/user-attachments/assets/c159a191-23d4-4ae3-a036-1261957250b9)
+![image](https://github.com/user-attachments/assets/7eef66d8-479e-48d6-acec-4e9dc9ef702d)
 
 **Question 9**
 
@@ -161,6 +161,7 @@ HAVING AVG(salary)<15000;
 
 **Output:**
 
+![image](https://github.com/user-attachments/assets/630b5ae2-eb66-406c-88d5-8e58cd47f42c)
 
 **Question 10**
 
