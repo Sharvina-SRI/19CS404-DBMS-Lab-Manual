@@ -114,7 +114,7 @@ LEFT JOIN
 
 **Question 4**
 
-![image](https://github.com/user-attachments/assets/af68b18f-e7c4-4e1b-bb46-05d3a222fd0c)
+![image](https://github.com/user-attachments/assets/62fe53ff-0d4a-4cbe-a808-ab5214598703)
 
 ```sql
 select s.* from salesman s
@@ -143,7 +143,7 @@ WHERE tr.test_name = 'Blood Pressure';
 
 **Question 6**
 
-![image](https://github.com/user-attachments/assets/c7867636-4fc6-4c15-8f32-0af2bf0fba89)
+![image](https://github.com/user-attachments/assets/6ad9027d-b8fa-44b3-9bc0-629418a7ae56)
 
 ```sql
 select c.cust_name as "Customer Name",c.city,s.name as Salesman,s.commission from customer c
