@@ -37,125 +37,145 @@ HAVING condition;
 ```
 
 **Question 1**
---
--- Paste Question 1 here
+
+![image](https://github.com/user-attachments/assets/62055eb0-48cc-42a7-a900-f7ab05c795c1)
 
 ```sql
--- Paste your SQL code below for Question 1
+SELECT DoctorID,COUNT(RecordID)AS TotalRecords
+FROM MedicalRecords 
+GROUP BY DoctorID
 ```
 
 **Output:**
 
-![Output1](output.png)
+![image](https://github.com/user-attachments/assets/a5f4c2ed-9300-407e-8184-8ccc11a08750)
 
 **Question 2**
----
--- Paste Question 2 here
+
+![image](https://github.com/user-attachments/assets/518db1a6-af55-40b7-8414-6c8f854c4aea)
 
 ```sql
--- Paste your SQL code below for Question 2
+SELECT CAST(SUBSTR(ValidityPeriod,1,4) AS INTEGER) AS ValidityYear, COUNT(DISTINCT PatientID) AS TotalPatients
+FROM Insurance
+GROUP BY CAST(SUBSTR(ValidityPeriod,1,4) AS INTEGER)
+ORDER BY ValidityYear;
 ```
 
 **Output:**
 
-![Output2](output.png)
+![image](https://github.com/user-attachments/assets/ba3871c5-8783-4664-a689-d198338920bf)
 
 **Question 3**
----
--- Paste Question 3 here
+
+![image](https://github.com/user-attachments/assets/64da832c-0891-4b85-a8d2-553811b3422e)
 
 ```sql
--- Paste your SQL code below for Question 3
+SELECT DoctorID,COUNT(AppointmentID) AS TotalAppointments
+FROM Appointments
+GROUP BY DoctorID
 ```
 
 **Output:**
 
-![Output3](output.png)
+![image](https://github.com/user-attachments/assets/bbf5388c-c289-4428-9643-da405c2b397b)
 
 **Question 4**
----
--- Paste Question 4 here
+
+![image](https://github.com/user-attachments/assets/6d44a5a6-7355-4208-8ba3-7276333e57bd)
 
 ```sql
--- Paste your SQL code below for Question 4
+SELECT name,MAX(LENGTH(name)) AS length
+FROM customer
 ```
 
 **Output:**
 
-![Output4](output.png)
+![image](https://github.com/user-attachments/assets/c389f308-f13f-49a2-bbd9-508581377f12)
 
 **Question 5**
----
--- Paste Question 5 here
+
+![image](https://github.com/user-attachments/assets/8043ac55-4a51-4f24-a6b3-7e66199b7d82)
 
 ```sql
--- Paste your SQL code below for Question 5
+SELECT AVG(income) AS avg_income
+FROM employee
+WHERE name LIKE "A%";
 ```
 
 **Output:**
 
-![Output5](output.png)
+![image](https://github.com/user-attachments/assets/e11ec43e-d388-4237-abdc-0c57b021bbaf)
 
 **Question 6**
----
--- Paste Question 6 here
+
+![image](https://github.com/user-attachments/assets/72431fd8-5e4e-4636-9c37-c3c22ca42398)
 
 ```sql
--- Paste your SQL code below for Question 6
+SELECT COUNT(id) AS employees_in_california
+FROM employee
+WHERE city ="California";
 ```
 
 **Output:**
 
-![Output6](output.png)
+![image](https://github.com/user-attachments/assets/068e0169-d548-406f-bdb5-347168c897c7)
 
 **Question 7**
----
--- Paste Question 7 here
+
+![image](https://github.com/user-attachments/assets/3515ee75-17aa-4a57-b4e5-7d33f53bd9f2)
 
 ```sql
--- Paste your SQL code below for Question 7
+SELECT name AS fruit_name,MIN(inventory) AS lowest_quantity
+FROM fruits
 ```
 
 **Output:**
 
-![Output7](output.png)
+![image](https://github.com/user-attachments/assets/e63fe198-da03-4c4d-b3e9-d39edb553b3f)
 
 **Question 8**
----
--- Paste Question 8 here
+
+![image](https://github.com/user-attachments/assets/9b5f5b9d-9462-49b3-a345-0e3a2288a341)
 
 ```sql
--- Paste your SQL code below for Question 8
+SELECT jdate,AVG(workhour) AS "AVG(workhour)"
+FROM employee1
+GROUP BY jdate
+HAVING AVG(workhour)<10;
 ```
 
 **Output:**
 
-![Output8](output.png)
+![image](https://github.com/user-attachments/assets/c159a191-23d4-4ae3-a036-1261957250b9)
 
 **Question 9**
----
--- Paste Question 9 here
+
+![image](https://github.com/user-attachments/assets/7c3123c2-b8c1-437a-a8d5-63507b59aa5c)
 
 ```sql
--- Paste your SQL code below for Question 9
+SELECT address,AVG(salary) AS "AVG(salary)"
+FROM customer1
+GROUP BY address
+HAVING AVG(salary)<15000;
 ```
 
 **Output:**
 
-![Output9](output.png)
 
 **Question 10**
----
--- Paste Question 10 here
+
+![image](https://github.com/user-attachments/assets/a82df8ee-5b55-44a6-8c3d-0ce0e4c8453e)
 
 ```sql
--- Paste your SQL code below for Question 10
+SELECT age,MIN(income) AS "MIN(income)"
+FROM employee
+GROUP BY age
+HAVING MIN(income)<400000;
 ```
 
 **Output:**
 
-![Output10](output.png)
-
+![image](https://github.com/user-attachments/assets/18091313-5f8b-4baa-ae54-f8f9d515fae0)
 
 ## RESULT
 Thus, the SQL queries to implement aggregate functions, GROUP BY, and HAVING clause have been executed successfully.
