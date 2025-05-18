@@ -29,8 +29,8 @@ END;
 
 ## 1. Write a PL/SQL program to find the Greatest of Two Numbers
 
-### Steps:
-
+### Program:
+```
 DECLARE
    num1 NUMBER := 25;
    num2 NUMBER := 80;
@@ -44,6 +44,7 @@ BEGIN
 
    DBMS_OUTPUT.PUT_LINE('The greatest number is: ' || greatest);
 END;
+```
 
 **Expected Output:**  
 Greater number is: 80
@@ -53,8 +54,8 @@ Greater number is: 80
 
 ## 2. Write a PL/SQL program to Calculate Sum of First N Natural Numbers
 
-### Steps:
-
+### Program:
+```
 DECLARE
    n NUMBER := 10;       
    sum NUMBER := 0;
@@ -67,6 +68,7 @@ BEGIN
 
    DBMS_OUTPUT.PUT_LINE('Sum of first ' || n || ' natural numbers is: ' || sum);
 END;
+```
 
 **Expected Output:**  
 Sum of first 10 natural numbers is: 55
@@ -81,6 +83,33 @@ Sum of first 10 natural numbers is: 55
 - Use a loop to generate the next terms using the formula `c = a + b`.
 - Print each term in the series.
 
+### Program:
+```
+DECLARE
+    n NUMBER := 7; -- number of terms to generate
+    a NUMBER := 0;
+    b NUMBER := 1;
+    c NUMBER;
+    i NUMBER := 1;
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('Fibonacci sequence:');
+    WHILE i <= n LOOP
+        IF i = 1 THEN
+            DBMS_OUTPUT.PUT(a);
+        ELSIF i = 2 THEN
+            DBMS_OUTPUT.PUT(', ' || b);
+        ELSE
+            c := a + b;
+            DBMS_OUTPUT.PUT(', ' || c);
+            a := b;
+            b := c;
+        END IF;
+        i := i + 1;
+    END LOOP;
+    DBMS_OUTPUT.NEW_LINE;
+END;
+```
+
 **Expected Output:**  
 n = 7  
 Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8
@@ -89,7 +118,8 @@ Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8
 
 ## 4. Write a PL/SQL Program to display the number in Reverse Order
 
-### Steps:
+### Program:
+```
 DECLARE
    n NUMBER := 1535;         
    reversed NUMBER := 0;
@@ -105,6 +135,7 @@ BEGIN
    DBMS_OUTPUT.PUT_LINE('n = ' || original);
    DBMS_OUTPUT.PUT_LINE('Reversed number is ' || reversed);
 END;
+```
 
 **Expected Output:**  
 n = 1535  
@@ -115,6 +146,8 @@ Reversed number is 5351
 
 ## 5. Write a PL/SQL program to find the largest of three numbers
 
+### Program:
+```
 DECLARE
    a NUMBER := 10;
    b NUMBER := 9;
@@ -132,7 +165,7 @@ BEGIN
    DBMS_OUTPUT.PUT_LINE('a = ' || a || ', b = ' || b || ', c = ' || c);
    DBMS_OUTPUT.PUT_LINE('Largest of three numbers is ' || largest);
 END;
-
+```
 
 **Expected Output:**  
 a = 10, b = 9, c = 15  
