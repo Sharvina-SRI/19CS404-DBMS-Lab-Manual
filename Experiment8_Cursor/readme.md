@@ -76,8 +76,9 @@ END;
 - Use a simple cursor to fetch and display employee names and designations.
 - Implement exception handling to catch the relevant exceptions and display appropriate messages.
 
-  **Program:**
-  SET SERVEROUTPUT ON;
+**Program:**
+```sql
+SET SERVEROUTPUT ON;
 
 DECLARE
     CURSOR emp_cursor IS
@@ -108,12 +109,12 @@ EXCEPTION
     WHEN OTHERS THEN
         DBMS_OUTPUT.PUT_LINE('Unexpected error: ' || SQLERRM);
 END;
-
-
-
+```
 **Output:**  
-The program should display the employee details or an error message.
-![image](https://github.com/user-attachments/assets/f9aabe54-598d-4c89-a976-c5c7d76c5d9d)
+
+![image](https://github.com/user-attachments/assets/6d078b0a-f4e5-416d-aa0b-74e9f2548c34)
+
+---
 
 ### **Question 2: Parameterized Cursor with Exception Handling**
 
@@ -130,7 +131,7 @@ The program should display the employee details or an error message.
 - Implement exception handling to catch and display relevant error messages.
 
 **Program:**
-
+```sql
 SET SERVEROUTPUT ON;
 
 DECLARE
@@ -166,11 +167,11 @@ EXCEPTION
     WHEN OTHERS THEN
         DBMS_OUTPUT.PUT_LINE('Unexpected error: ' || SQLERRM);
 END;
+```
 
 **Output:**  
-The program should display the employee details within the specified salary range or an error message if no data is found.
 
-![image](https://github.com/user-attachments/assets/f9a0ce39-2f09-41e3-ae42-34383e1e1b2d)
+![image](https://github.com/user-attachments/assets/d31902ae-0191-4c29-a0a9-486ab8db31d3)
 
 ---
 
@@ -187,10 +188,9 @@ The program should display the employee details within the specified salary rang
 - Insert sample department numbers for employees.
 - Use a cursor FOR loop to fetch and display employee names along with their department numbers.
 - Implement exception handling to catch the relevant exceptions.
-- 
 **Program:**
-
-  SET SERVEROUTPUT ON;
+```sql
+SET SERVEROUTPUT ON;
 
 DECLARE
     no_data BOOLEAN := TRUE;
@@ -211,10 +211,10 @@ EXCEPTION
         DBMS_OUTPUT.PUT_LINE('Unexpected error: ' || SQLERRM);
 END;
 
+```
 **Output:**  
-The program should display employee names with their department numbers or the appropriate error message if no data is found.
 
-![image](https://github.com/user-attachments/assets/fb28d6ca-daf8-4f14-9588-08d1b9ace2fb)
+![image](https://github.com/user-attachments/assets/9efb85c3-7e52-41ed-a31a-79777b4c0a34)
 
 ---
 
@@ -232,8 +232,8 @@ The program should display employee names with their department numbers or the a
 - Declare a cursor using `%ROWTYPE` to fetch complete rows from the `employees` table.
 - Implement exception handling to catch the relevant exceptions and display appropriate messages.
 
-**Program:**
-
+ **Program:**
+```sql
 SET SERVEROUTPUT ON;
 
 DECLARE
@@ -269,10 +269,10 @@ EXCEPTION
         DBMS_OUTPUT.PUT_LINE('Unexpected error: ' || SQLERRM);
 END;
 
+```
 **Output:**  
-The program should display employee records or the appropriate error message if no data is found.
 
-![image](https://github.com/user-attachments/assets/0e45f995-b9e7-4611-87e3-9015dae29d31)
+![image](https://github.com/user-attachments/assets/85617015-7a24-4f90-9504-42e6492d5cae)
 
 ---
 
@@ -291,7 +291,7 @@ The program should display employee records or the appropriate error message if 
 - Implement exception handling to handle `NO_DATA_FOUND` or other errors that may occur.
 
 **Program:**
-
+```sql
 SET SERVEROUTPUT ON;
 
 DECLARE
@@ -322,15 +322,15 @@ EXCEPTION
         DBMS_OUTPUT.PUT_LINE('No employees found in the specified department.');
     WHEN OTHERS THEN
         DBMS_OUTPUT.PUT_LINE('An unexpected error occurred: ' || SQLERRM);
-END;/
+END;
+/
+```
 
 **Output:**  
-The program should update employee salaries and display a message, or it should display an error message if no data is found.
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/6c8909f8-465a-4372-a08b-fd2d60bd128a)
 
 ---
 
 ## RESULT
 Thus, the program successfully executed and displayed employee details using a cursor. 
-
